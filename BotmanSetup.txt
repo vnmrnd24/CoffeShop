@@ -1,6 +1,6 @@
 Follow install instructions: 
 1: https://laravel.com/docs/5.5/installation#server-requirements
-2: https://laravel.com/docs/5.5/installation#server-requirements
+2: https://botman.io/2.0/installation
 
 Change botman composer.json:
 Add "allow-plugins": true to config
