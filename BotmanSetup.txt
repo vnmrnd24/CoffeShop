@@ -1,0 +1,18 @@
+Follow install instructions: 
+1: https://laravel.com/docs/5.5/installation#server-requirements
+2: https://botman.io/2.0/installation
+
+Change botman composer.json:
+Add "allow-plugins": true to config
+
+Run composer update
+
+Make sure .composer/vendor/bin is added to PATH variables
+
+Create a .env file from the example file
+
+Run php artisan key:generate
+
+Use php artisan serve or xampp to run the project
+
+Error log is in storage/logs/laravel.log
