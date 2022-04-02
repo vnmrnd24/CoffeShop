@@ -33,7 +33,7 @@ $botman->hears('I want ([0-9]+) (small coffee|medium coffee|large coffee|shot
   of espresso)', function ($bot, $number, $drink){
     $cost = 5;
     $total = $number * $cost;
-    $bot->reply('You have order'.$number.'cups of '.$coffee.'.')
+    $bot->reply('You have order'.$number.'cups of '.$coffee.'.');
 
     /*
       if(isset($_REQUEST["term"])){
@@ -64,3 +64,5 @@ botman
 
 // Start listening
 $botman->listen();
+
+?>
