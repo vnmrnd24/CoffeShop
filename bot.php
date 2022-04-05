@@ -25,7 +25,7 @@ DriverManager::loadDriver(\BotMan\Drivers\Telegram\TelegramDriver::class);
 $botman = BotManFactory::create($config);
 
 // Give the bot something to listen for.
-$botman->hears('hello', function (BotMan $bot) {
+$botman->hears('hello', function ($bot) {
     $bot->reply('Welcome to Sandman Coffee.');
 });
 
@@ -33,7 +33,7 @@ $botman->hears('I want ([0-9]+) (small coffee|medium coffee|large coffee|shot
   of espresso)', function ($bot, $number, $drink){
     $cost = 5;
     $total = $number * $cost;
-    $bot->reply('You have order'.$number.'cups of '.$coffee.'.')
+    $bot->reply('You have order'.$number.'cups of '.$coffee.'.');
 
     /*
       if(isset($_REQUEST["term"])){
@@ -56,11 +56,13 @@ $botman->hears('I want ([0-9]+) (small coffee|medium coffee|large coffee|shot
 
 });
 
-$botman->hears('Good Bye', function (Botman $bot) {
+$botman->hears('Good Bye', function ($bot) {
     $conn->close();
 });
 
 botman
 
 // Start listening
-$botman->listen();
+//$botman->listen();
+
+?>
